@@ -1,0 +1,23 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h2{
+    text-transform: lowercase;
+    text-decoration: overline;
+}
+
+h3{
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
+
+h4{
+    text-decoration: underline overline;
+    text-decoration: none;
+}
