@@ -12,9 +12,16 @@ header{
   border-radius: 10px;
 }
 
-nav, #bookclub-main-content, #bookclub-intro{
+nav{
+  height: 200px;
   background-color: #dedede;
   border-radius: 10px;
+}
+
+#bookclub-main-content, #bookclub-intro{
+  background-color: #dedede;
+  border-radius: 10px;
+  /* padding: 20px; */
 }
 
 #bookclub-main-content h2{
@@ -39,4 +46,41 @@ ul li a{
 
 h2, h3{
   text-decoration: underline;
+}
+
+#teachers-info div{
+  margin: 10px;
+  width: 400px;
+  box-shadow: 6px 0 21px -3px #333333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+nav li{
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #2373fc;
+  border-radius: 5px;
+}
+
+ul{
+  margin: 10px;
+  list-style-type: none;
+}
+
+table{
+  margin: auto;
+}
+
+th, td{
+  padding: 10px;
+}
+
+footer{
+  padding: 10px;
+}
+
+.navigation-bar{
+  margin: 10px;
+  padding: 2px;
 }
