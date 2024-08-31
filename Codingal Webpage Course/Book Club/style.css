@@ -1,0 +1,42 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #fafafa;
+}
+
+header{
+  background-color: #2373fc;
+  color: #fff;
+  border-radius: 10px;
+}
+
+nav, #bookclub-main-content, #bookclub-intro{
+  background-color: #dedede;
+  border-radius: 10px;
+}
+
+#bookclub-main-content h2{
+  color: #2373fc;
+}
+
+#best-sellers p b{
+  color: #003566;
+}
+
+#opening-times #closed-day th{
+  color: #ff4d4d;
+}
+
+footer h2{
+  color: #6524ff;;
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+h2, h3{
+  text-decoration: underline;
+}
