@@ -1,0 +1,28 @@
+div{
+  padding: 5px;
+}
+
+.first{
+  background-color: #0199ff;
+  opacity: 0.2;
+}
+
+.second{
+  background-color: #0199ff;
+  opacity: 0.4;
+}
+
+.third{
+  background-color: #0199ff;
+  opacity: 0.6;
+}
+
+.fourth{
+  background-color: #0199ff;
+  opacity: 0.8;
+}
+
+.fifth{
+  background-color: #0199ff;
+  opacity: 1;
+}
