@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Z-Index | Codingal</title>
+  <style>
+    div {
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      font-size: 18px;
+      color: #FFF;
+      padding: 1px 0 1px 20px;
+      width: 150px;
+      border: 3px solid #000;
+    }
+
+    .z-index-one{
+      background-color: #006efd;
+      z-index: 1;
+    }
+
+    .z-index-two{
+      background-color: #7600fd;
+      top: -20px;
+      left: 50px;
+      z-index: 2;
+    }
+
+    .z-index-three{
+      background-color: #fd002a;
+      top: -40px;
+      z-index: 3;
+    }
+
+    .z-index-four{
+      background-color: #fde400;
+      top: -60px;
+      left: 50px;
+      z-index: 3;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="z-index-one"><p>z-index : 1;</p></div>
+  <div class="z-index-two"><p>z-index : 2;</p></div>
+  <div class="z-index-three"><p>z-index : 3;</p></div>
+  <div class="z-index-four"><p>z-index : 4;</p></div>
 </body>
 </html>
