@@ -16,6 +16,9 @@ nav{
   height: 200px;
   background-color: #dedede;
   border-radius: 10px;
+  position: sticky;
+  top: 5px;
+  z-index: 2;
 }
 
 #bookclub-main-content, #bookclub-intro{
