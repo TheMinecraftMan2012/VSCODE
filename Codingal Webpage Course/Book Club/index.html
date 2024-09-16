@@ -9,7 +9,7 @@
     <!-- HEADING -->
     <header>
       <h1>Mount Caramel Book Club</h1>
-      <img src="assets/1333.webp" alt="Books">
+      <img src="assets/1333.webp" alt="Books" width="300" height="150">
     </header>
     <!-- NAVIGATION -->
     <nav>
@@ -32,32 +32,39 @@
       <!-- Teachers Info -->
       <div class="main-content-section" id="teachers-info">
         <h2>Meet our teachers</h2>
-        <div>
-          <img src="assets/1.jpg" height="100" width="100">
-          <h3>Ms. Emma</h3>
-          <p>She teaches elementary school kids. She has a bachelor's degree in Elementary education</p>
-        </div>
-        <div>
-          <img src="assets/12.jpg" height="100" width="100">  <h3>Ms. Caroline</h3>
-          <p>She teacher secondary school and high school kids. She has a Master's of Arts.</p>
+        <div class="flex-teacher-info">
+          <div>
+            <img src="assets/1.jpg" height="100" width="100">
+            <h3>Ms. Emma</h3>
+            <p>She teaches elementary school kids. She has a bachelor's degree in Elementary education</p>
+          </div>
+          <div>
+            <img src="assets/12.jpg" height="100" width="100">  <h3>Ms. Caroline</h3>
+            <p>She teacher secondary school and high school kids. She has a Master's of Arts.</p>
+          </div>
         </div>
       </div>
       <!-- BOOKS REVIEW -->
       <div class="main-content-section" id="books-review">
         <h2>Book Review</h2>
-        <h3>Alice in the wonderland</h3>
-        <p><b>Amit:</b><q>I loved reading this book. A must read for everyone.</q></p>
-        <p><b>Sekhar:</b><q>I really enjoyed reading this book</q></p>
+        <div class="flexbox-books-review">
+          <h3>Alice in the wonderland</h3>
+          <div class="p-section">
+            <p><b>Amit:</b><q>I loved reading this book. A must read for everyone.</q><br>
+              <b>Sekhar:</b><q>I really enjoyed reading this book</q></p>
+          </div>
+        </div>
       </div>
       <!-- MEDIA SECTION -->
       <div class="main-content-section" id="media-section">
         <h2>Relative Videos</h2>
-        <video width="400" height="250" controls>
-          <source src="assets/3.mp4">
-        </video>
-        <br>
-        <iframe width="400" height="250" src="https://youtube.com/embed/wcWLKRXgjsw?si=4S29QXOFKrLkmayV"></iframe>
-        <br>
+        <div class="videos">
+          <video width="500" height="299" controls>
+            <source src="assets/3.mp4">
+          </video>
+          <iframe width="400" height="250" src="https://youtube.com/embed/wcWLKRXgjsw?si=4S29QXOFKrLkmayV"></iframe>
+        </div>
+        
       </div>
       <!-- OPENING TIMES -->
       <div class="main-content-section" id="opening-times">
@@ -94,20 +101,23 @@
         </table>
       </div>
       <!-- BEST SELLERS -->
-      <div class="main-content-section" id="best-sellers">
-        <h2>Best Sellers</h2>
-        <p><b>Charlie and the chocolate factory</b> by <i>Roald Dahl</i></p>
-        <p><b>The Cat in the Hat</b> by <i>Dr Seuss</i></p>
-        <p><b>The Little Prince</b> by <i>Antoine de Saint</i></p>
-        <p><b>Where the Wild Things Are</b> by <i>Maurice Sendak</i></p>
-      </div>
+    </div>
+    <div class="main-content-section" id="best-seller">
+      <h2>Best Sellers</h2>
+      <p><b>Charlie and the chocolate factory</b> by <i>Roald Dahl</i></p>
+      <p><b>The Cat in the Hat</b> by <i>Dr Seuss</i></p>
+      <p><b>The Little Prince</b> by <i>Antoine de Saint</i></p>
+      <p><b>Where the Wild Things Are</b> by <i>Maurice Sendak</i></p>
     </div>
     <!-- FOOTER -->
     <footer>
       <h2>Contact Us!</h2>
-      <p>Contact Us: Mrs. Caroline</p>
-      <p>Phone No: +1124533</p>
-      <address>36 Mount Caramel Book Club</address>
+      <div class="info">
+        <p>Contact Us: Mrs. Caroline</p>
+        <p>Phone No: +1124533</p>
+        <address>36 Mount Caramel Book Club</address>
+        <button>Enquiry!</button>
+      </div>
     </footer>
   </div>
 </body>

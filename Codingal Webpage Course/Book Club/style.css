@@ -7,32 +7,68 @@ body{
 }
 
 header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #2373fc;
   color: #fff;
   border-radius: 10px;
+  grid-area: header;
+  margin-right: 10px;
+  padding: 10px 10px 10px 50px;
+}
+
+header img{
+  border-radius: 5px;
 }
 
 nav{
-  height: 200px;
-  background-color: #dedede;
+  background-color: #69b6ff;
   border-radius: 10px;
   position: sticky;
   top: 5px;
   z-index: 2;
+  margin: 10px 10px 0 0;
+  grid-area: nav;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#bookclub-main-content, #bookclub-intro{
-  background-color: #dedede;
+#bookclub-intro{
+  padding: 0 20px 0 20px;
+  grid-area: intro;
+  background-color: #003566;
   border-radius: 10px;
-  /* padding: 20px; */
+  width: 90%;
+  color: #FFF;
+}
+
+#bookclub-main-content{
+  background-color: #dedede;
+  grid-area: main-content;
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
+  padding: 0 20px 20px 20px;
 }
 
 #bookclub-main-content h2{
-  color: #2373fc;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #2373fc;
+  top: 10px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-#best-sellers p b{
-  color: #003566;
+#best-seller{
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #571717;
+  grid-area: best-seller;
+  color: #FFF;
+  padding: 0 20px 0 20px;
 }
 
 #opening-times #closed-day th{
@@ -44,14 +80,25 @@ footer h2{
 }
 
 ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
   text-decoration: none;
 }
 
-h2, h3{
+h2{
+  color: #FFF;
   text-decoration: underline;
 }
 
-#teachers-info div{
+h3{
+  position: relative;
+  top: 10px;
+  text-decoration: underline;
+}
+
+#teachers-info .flex-teacher-info div{
   margin: 10px;
   width: 400px;
   box-shadow: 6px 0 21px -3px #333333;
@@ -59,11 +106,17 @@ h2, h3{
   border-radius: 5px;
 }
 
+#teachers-info .flex-teacher-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav li{
   margin: 10px;
   padding: 5px;
-  border: 1px solid #2373fc;
   border-radius: 5px;
+  float: left;
 }
 
 ul{
@@ -81,9 +134,71 @@ th, td{
 
 footer{
   padding: 10px;
+  grid-area: footer;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: 
+    "header header header header intro"
+    "nav nav nav nav intro"
+    "main-content main-content main-content main-content best-seller"
+    "footer footer footer footer footer";
 }
 
 .navigation-bar{
-  margin: 10px;
-  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#books-review .flexbox-books-review .p-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+#books-review .flexbox-books-review h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#media-section .videos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#media-section video{
+  margin-right: 10px;
+  margin-bottom: 45px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info button{
+  height: 40px;
+  width: 100px;
+  background-color: #2373fc;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid #003566;
+  color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.info button:hover{
+  color: #2373fc;
+  background: #FFF;
+  border: 2px solid #aaaaaa;
 }
