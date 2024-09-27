@@ -142,7 +142,7 @@ footer{
   grid-area: footer;
 }
 
-.grid-container{
+.container-fluid{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas: 
@@ -188,7 +188,7 @@ footer{
   justify-content: space-between;
 }
 
-.info button{
+.info .enquiry-button{
   height: 40px;
   width: 100px;
   background-color: #2373fc;
@@ -202,7 +202,7 @@ footer{
   transition: 0.3s ease;
 }
 
-.info button:hover{
+.info .enquiry-button:hover{
   color: #2373fc;
   background: #FFF;
   border: 2px solid #aaaaaa;
