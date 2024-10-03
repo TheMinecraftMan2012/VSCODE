@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous"></script>
+  <style>
+    *{font-family: 'Poppins', sans-serif;}
+    body{
+      text-align: center;
+    }
+    header{
+      background-color: #383838;
+      color: #fff;
+      padding-top: 10px;
+      border: 5px solid #d1d1d1;
+      border-radius: 30px;
+    }
+    nav{
+      margin-top: 10px;
+      color: #FFF;
+    }
+    .card{
+      width: 18rem;
+    }
+    #reqiured-advanced-valuables-mod-loaders .card{
+      margin-left: 65px;
+    }
+
+    #dependency-advanced-valuables .card{
+      margin-left: 27.5%;
+    }
+    p{
+      font-size: 18px;
+    }
+    .a-av-review{
+      text-decoration: none;
+    }
+  </style>
+  <title>Advanced Valuables</title>
+</head>
+<body class="bg-light">
+  <div class="container mt-4">
+    <header class="pt-2 pb-2 pr-2 pl-2" id="header-av">
+      <h1 class="mb-3">Advanced Valuables</h1>
+      <p>Mod that adds different types of Valuables</p>
+    </header>
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-4">Navigate to Sites</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="modloaders.html" class="nav-link">Mod Loaders</a></li>
+        <li class="nav-item"><a href="dependencies.html" class="nav-link active">Dependencies</a></li>
+        <li class="nav-item"><a href="downloads.html" class="nav-link">Download</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <h2>Dependencies</h2>
+    <hr>
+    <h3>For Fabric</h3><hr>
+    <div class="row" id="dependency-advanced-valuables">
+      <div class="col">
+        <div class="card">
+          <img src="https://cdn.modrinth.com/data/mOgUt4GM/1b6bcdef5a3d92572f517122650716be7ec6458b.webp" alt="modmenu">
+          <div class="card-body">
+            <h5 class="card-title">Mod Menu</h5>
+            <p class="card-text">This is an optional dependency</p>
+            <a href="https://modrinth.com/mod/modmenu" target="_blank" class="btn btn-success">Download Mod Mod Menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://flintmc.net/brand/modification/81bae1feee32c1c794d63719ef123d0b.png?height=250" alt="modmenu">
+          <div class="card-body">
+            <h5 class="card-title">Fabric API</h5>
+            <p class="card-text">This is a required dependency</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20" target="_blank" class="btn btn-success">Download Fabric API</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
