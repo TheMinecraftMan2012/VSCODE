@@ -6,11 +6,28 @@
   <title>Welcome to JavaScript</title>
 </head>
 <body>
+  <h2>Welcome to JavaScript</h2>
+  <h1 id="heading"></h1>
+  <p id="paragraph"></p>
+  <br>
+  <p id="p2"></p>
   <script>
+    document.getElementById("paragraph").innerHTML = "Hello World, From Paragraph";
+    document.getElementById("p2").innerHTML = "My name is Raaeid";
+
+    document.getElementById("heading").innerHTML = "Javascript Heading!"
+
+    // This is a comment
+    /* This is a another styled comment */
+
     let name = "Raaeid";
     let favSub = "Math";
     let grade = 6;
     document.write("My name is " + name + "." + " I am in Class " + grade + "." + " My favourite subject is " + favSub + ".");
+    console.log(`Hello! I am ${name}.`);
+
+    let property = {favCoding : "Java", hobby : "Coding"};
+    document.write("My hobby is " + property.hobby);
   </script>
 </body>
 </html>

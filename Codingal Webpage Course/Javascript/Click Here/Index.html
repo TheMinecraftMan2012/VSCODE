@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: aliceblue;
+    }
+    button{
+      padding: 10px 20px 10px 20px;
+      font-size: 18px;
+      background-color: #2873ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+  </style>
+</head>
+<body id="body">
+  <button id="button" onclick="myFunction()">Click Here</button>
+  
+  <script>
+    function myFunction(){
+      document.getElementById("button").innerHTML = "JavaScript";
+      document.getElementById("button").style.background = "#ff9b29";
+
+      document.getElementById("body").style.background = "#fdf6dd"
+    }
+  </script>
+</body>
+</html>
