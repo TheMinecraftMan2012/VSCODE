@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e2ecfa;
+}
+
+.container{
+  background-color: #FFF;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #1073ff;
+  text-align: center;
+  transition: .5s ease;
+}
+.numbers-display{
+  height: 40px;
+  width: 100%;
+  background-color: #bbbbbb;
+  margin: 15px 0 15px 0;
+  color: #FFF;
+  border-radius: 5px;
+  border: 1px solid #4b4b4b;
+  padding-top: 3px;
+}
+
+.numbers-display p{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.buttons .numbers button{
+  width: 200px;
+  height: 45px;
+  font-size: 18px;
+  background-color: #1073ff;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons .operators button{  
+  margin-top: 10px;
+  width: 95px;
+  height: 45px;
+  background-color: #1073ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+.buttons .operators #add, #subtract, #multiply{
+  margin-right: 3.5px;
+}
+
+.buttons button:hover{
+  color: #1073ff;
+  background-color: #ececec;
+  transition: 0.2s ease-in-out;
+}
+
+.buttons button:not(:hover){
+  transition: 0.2s ease-in-out;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions | Codingal</title>
+</head>
+<body>
+  <h1>Let's create Functions!</h1>
+  <p id="sum-click" onclick="onclickSum()">Click Here for the sum.</p>
+  <script>
+    function sumFunction()
+    {
+      let x = 5;
+      let y = 2;
+      let z = x + y;
+
+      return z;
+    }
+    let sum = sumFunction();
+    console.log(`The Sum is ${sum}`);
+    function onclickSum()
+    {
+      document.getElementById("sum-click").innerHTML = "The Sum is " + sum;
+    }
+  </script>
+</body>
+</html>
