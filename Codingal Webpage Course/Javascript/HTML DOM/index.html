@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM | Codingal</title>
+    <style>
+        .alert{
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="heading">Welcome</h1>
+    <p>Hello!</p>
+</header>
+<p>How are you?</p>
+<script>
+    let div = document.createElement("div");
+    div.id = "paragraph";
+    div.className = "alert";
+    div.innerHTML = `<p>Congrats! You have created a div!</p>`;
+    document.body.append(div);
+
+    document.getElementById("heading").innerHTML = "&#128512";
+
+    document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>";
+</script>
+</body>
+</html>
