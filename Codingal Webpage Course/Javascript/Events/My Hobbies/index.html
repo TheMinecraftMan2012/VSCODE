@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>A Spooky Story</title>
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #69b6ff;
+        }
+        .container{
+            background-color: #FFF;
+            border: 3px solid #0063bc;
+            border-radius: 15px;
+            text-align: center;
+            padding: 0 50px 30px 50px;
+            width: 30%;
+        }
+        button{
+            padding: 5px;
+            font-size: 0.9rem;
+            width: 100%;
+            background-color: #0171b1;
+            border: none;
+            color: #FFF;
+            border-radius: 5px;
+            height: 40px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        button:disabled{
+            background-color: #b3b3b3;
+            color: #4b4b4b;
+        }
+        button:disabled:hover{
+            background-color: #4b4b4b;
+            color: #b3b3b3;
+        }
+        button:hover{
+            color: #0171b1;
+            background: none;
+        }
+        input{
+            height: 30px;
+            padding-left: 10px;
+            margin-left: 10px;
+            color: #0067ef;
+            outline: none;
+            border: 2px solid #0171b1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Hobbies</h1>
+            <p id="hobby-line">I want to tell you my hobby</p>
+        </header>
+        <div class="events">
+            <div class="name">
+                <button type="button" onclick="hobby()">Continue</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function hobby()
+        {
+            let hobby = document.getElementById("hobby-line");
+
+            if (hobby.innerHTML === "I want to tell you my hobby")
+            {
+                hobby.innerHTML = "My hobby is coding! I like coding very much";
+            }
+            else if (hobby.innerHTML === "My hobby is coding! I like coding very much")
+            {
+                hobby.innerHTML = "My another hobby is reading books especially on computer";
+            }
+            else if (hobby.innerHTML === "My another hobby is reading books especially on computer")
+            {
+                hobby.innerHTML = "Another one? Other is doing maths";
+            }
+            else if (hobby.innerHTML === "Another one? Other is doing maths")
+            {
+                hobby.innerHTML = "That's all! I am happy to share";
+            }
+        }
+    </script>
+</body>
+</html>
