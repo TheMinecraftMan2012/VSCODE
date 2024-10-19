@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playing Rectangle</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #69b6ff;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "rectangle" "buttons";
+      background-color: #FFF;
+      padding: 30px;
+      border: 3px solid #006efd;
+      border-radius: 15px;
+    }
+    .buttons{
+      margin-left: 50px;
+    }
+    button{
+      height: 50px;
+      width: 100px;
+    }
+    #circle, #oval, #hide{
+      margin-bottom: 10px;
+    }
+    .rectangle{
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+    }
+    .rectangle:hover{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectangle"></div>
+    <div class="buttons">
+      <div class="one">
+        <button type="button" onclick="circle()" id="circle">Make it Circle</button>
+        <button type="button" onclick="oval()" id="oval">Make it Oval</button>
+      </div>
+      <div class="two">
+        <button type="button" onclick="hideRect()" id="hide">Hide</button>
+        <button type="button" onclick="showRect()">Show</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let div = document.querySelector(".rectangle");
+
+    let circle = function () { div.style.borderRadius = "50%"; div.style.height = "150px"}
+    let hideRect = function () { div.style.display = "none"; }
+    let showRect = function () { div.style.display = "block"; }
+    let oval = function () { div.style.borderRadius = "50%"; div.style.height = "250px"; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing Text</title>
+</head>
+<body>
+    <div class="text">This is a sample text.</div>
+    <button type="button" onclick="randomText()">Change Text</button>
+    <button type="button" onclick="randomColor()">Change Color</button>
+
+    <script>
+        let playText = document.querySelector(".text");
+        let playTextStyle = playText.style;
+
+        let randomText = function ()
+        {
+            let randomNumber = Math.floor(Math.random() * 4);
+
+            if (randomNumber === 1)
+            {
+                playText.innerHTML = "I know some Java language";
+            }
+            else if (randomNumber === 2)
+            {
+                playText.innerHTML = "I was surprised because I saw a box full of candy";
+            }
+            else if (randomNumber === 3)
+            {
+                playText.innerHTML = "This is a sample text";
+            }
+        }
+
+        let randomColor = function ()
+        {
+            let randomNumber = Math.floor(Math.random() * 5);
+
+            if (randomNumber === 1)
+            {
+                playTextStyle.color = "red";
+            }
+            else if (randomNumber === 2)
+            {
+                playTextStyle.color = "blue";
+            }
+            else if (randomNumber === 3)
+            {
+                playTextStyle.color = "green";
+            }
+            else if (randomNumber === 4)
+            {
+                playTextStyle.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
