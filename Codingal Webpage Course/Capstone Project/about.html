@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card{
+            position: relative;
+            top: 70px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "img info";
+            border: 2px solid #4b4b4b;
+            padding: 10px 10px 5px 10px;
+            border-radius: 10px;
+            text-align: left;
+            margin-left: 36.5%;
+        }
+
+        .card .info{
+            margin-top: 15%;
+        }
+
+        .card img{
+            margin-right: 60%;
+        }
+
+        .card .info p{
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .info button{
+            width: 100%;
+            height: 50px;
+            font-size: 1rem;
+            border: none;
+            background-color: #006efd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info button a{
+            color: #FFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Dev</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Review</a>
+    </div>
+    <header class="header">
+        <img src="assets/img/icon_advancedvaluables.png" alt="logo" width="300" height="300">
+        <h1>Advanced Valuables</h1>
+    </header>
+    <div class="card">
+        <div class="img">
+            <img src="assets/img/178016214.jpg" width="200" height="200">
+        </div>
+        <div class="info">
+            <p>Developer of Advanced Valuables</p>
+            <button><a href="https://github.com/TheMinecraftMan2012" target="_blank">GitHub</a></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
