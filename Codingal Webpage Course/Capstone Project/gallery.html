@@ -3,20 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Capstone Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <style>
+    #av-carousel{
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <div class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Dev</a>
-    <a class="active" href="gallery.html">Gallery</a>
-    <a href="contact.html">Review</a>
+  <div class="container">
+    <div class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Dev</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Review</a>
+    </div>
+    <header class="header">
+      <img src="assets/img/icon_advancedvaluables.png" alt="logo" width="300" height="300">
+      <h1>Advanced Valuables</h1>
+    </header>
+    <div id="av-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#av-carousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#av-carousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#av-carousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#av-carousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="https://cdn.modrinth.com/data/cached_images/46747d0851e88fc88a7686202604f5365eff5939.png" class="d-block w-100" alt="img-1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://cdn.modrinth.com/data/ilvmemSJ/images/2386d12d2bd658495da403028f836325ce624dae.png" class="d-block w-100" alt="img-2">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://cdn.modrinth.com/data/ilvmemSJ/images/ba3dfab2f3db99ef4edd392766564f2729008685.png" class="d-block w-100" alt="img-3">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://cdn.modrinth.com/data/ilvmemSJ/images/b7882d97b3ab6f04700ee219885bf57336df1647.png" class="d-block w-100" alt="img-3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#av-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#av-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 TheMinecraftMan</p>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About Dev</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Review</a></li>
+      </ul>
+    </footer>
   </div>
-  <header class="header">
-    <img src="assets/img/icon_advancedvaluables.png" alt="logo" width="300" height="300">
-    <h1>Advanced Valuables</h1>
-  </header>
-</div>
 </body>
 </html>

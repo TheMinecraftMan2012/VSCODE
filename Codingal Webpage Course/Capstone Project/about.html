@@ -3,46 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Capstone Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <style>
         .card{
-            position: relative;
-            top: 70px;
-            width: 500px;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-areas: "img info";
-            border: 2px solid #4b4b4b;
-            padding: 10px 10px 5px 10px;
-            border-radius: 10px;
-            text-align: left;
-            margin-left: 36.5%;
-        }
-
-        .card .info{
-            margin-top: 15%;
-        }
-
-        .card img{
-            margin-right: 60%;
-        }
-
-        .card .info p{
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-        .info button{
-            width: 100%;
-            height: 50px;
-            font-size: 1rem;
-            border: none;
-            background-color: #006efd;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .info button a{
-            color: #FFF;
-            text-decoration: none;
+            width: 18rem;
+            margin-left: 39%;
+            margin-top: 7%;
         }
     </style>
 </head>
@@ -59,14 +32,23 @@
         <h1>Advanced Valuables</h1>
     </header>
     <div class="card">
-        <div class="img">
-            <img src="assets/img/178016214.jpg" width="200" height="200">
-        </div>
-        <div class="info">
-            <p>Developer of Advanced Valuables</p>
-            <button><a href="https://github.com/TheMinecraftMan2012" target="_blank">GitHub</a></button>
+        <img src="assets/img/178016214.jpg" class="card-img-top" alt="dev">
+        <div class="card-body">
+            <h5 class="card-title">TheMinecraftMan</h5>
+            <p>Developer of this mod</p>
+            <a href="https://github.com/TheMinecraftMan2012" class="btn btn-dark" target="_blank">GitHub</a>
         </div>
     </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 TheMinecraftMan</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About Dev</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Review</a></li>
+        </ul>
+    </footer>
 </div>
 </body>
 </html>
