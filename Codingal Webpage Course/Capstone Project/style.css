@@ -9,36 +9,6 @@ body{
     text-align: center;
 }
 
-.top-nav{
-    overflow: hidden;
-    float: left;
-    background-color: #cacaca;
-    width: 100%;
-    height: 50px;
-    padding-top: 10px;
-    padding-left: 30px;
-}
-
-.top-nav a{
-    text-decoration: none;
-    color: #177fe6;
-    font-weight: 600;
-    font-size: 18px;
-    margin-right: 50px;
-    padding: 14px 16px;
-    transition: .3s ease;
-}
-
-.top-nav a.active{
-    background: #177fe6;
-    color: #fff;
-}
-
-.top-nav a:hover{
-    background: #52a5f8;
-    color: #ffffff;
-}
-
 header{
     position: relative;
     top: 40px;
@@ -59,7 +29,6 @@ header img{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    top: 50px;
 }
 .ptext{
     position: absolute;
